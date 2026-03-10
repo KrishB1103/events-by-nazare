@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events by Nazare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAV
+══════════════════════════════════════ -->
+<nav>
+  <a class="nav-logo" href="#home"><span>Nazare</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Now</button>
+  <button id="burger-btn" aria-label="Toggle menu">&#9776;</button>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="home">
+  <div class="hero-left">
+    <span class="hero-eyebrow fade-up">Luxury Event Planning · Est. 2025</span>
+    <h1 class="hero-title fade-up fade-up-delay-1">
+      Making Every Event,<br/><em>A Sight</em><br/>To Remember.
+    </h1>
+    <p class="hero-sub fade-up fade-up-delay-2">
+      From intimate celebrations to grand corporate galas — we design unforgettable
+      experiences with elegance, precision, and heart.
+    </p>
+    <div class="hero-actions fade-up fade-up-delay-3">
+      <button class="btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View Our Work</button>
+      <button class="btn-ghost"   onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Let's Talk</button>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-image-stack">
+  <img src="resources/Haldi Marigold Decor.svg" alt="Events by Nazare" />
+  <div class="hero-deco"></div>
+</div>
+    <div class="hero-overlay-card">
+      <div class="hero-card-num">500+</div>
+      <div class="hero-card-label">Events Crafted</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SERVICES
+══════════════════════════════════════ -->
+<section id="services">
+  <div class="services-header">
+    <div>
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Our <em>Specialties</em></h2>
+    </div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🏢</span>
+      <div class="service-name">Corporate &amp; Conferences</div>
+      <p class="service-desc">Seamless professional events that leave lasting impressions on clients and teams alike.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💍</span>
+      <div class="service-name">Weddings &amp; Functions</div>
+      <p class="service-desc">Bespoke ceremonies designed around your unique love story, down to the last petal.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🍾</span>
+      <div class="service-name">Parties</div>
+      <p class="service-desc">High-energy brand experiences and athlete events that energize crowds and communities.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🎂</span>
+      <div class="service-name">Birthdays</div>
+      <p class="service-desc">Milestone celebrations curated with personality — from intimate dinners to lavish affairs.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🌸</span>
+      <div class="service-name">Showers &amp; Soirées</div>
+      <p class="service-desc">Baby showers, bridal showers, and intimate gatherings filled with warmth and wonder.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PORTFOLIO
+══════════════════════════════════════ -->
+<section id="portfolio">
+  <div class="portfolio-header">
+    <div>
+      <span class="section-label">Our Work</span>
+      <h2 class="section-title">A Few <em>Favorites</em></h2>
+    </div>
+  </div>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <div class="portfolio-bg p1"></div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Wedding</div>
+        <div class="portfolio-name"></div>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-bg p2"></div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Corporate</div>
+        <div class="portfolio-name"></div>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-bg p3"></div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Birthday</div>
+        <div class="portfolio-name"></div>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-bg p4"></div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Sports</div>
+        <div class="portfolio-name"></div>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-bg p5"></div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Bridal Shower</div>
+        <div class="portfolio-name"></div>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-bg p6"></div>
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Baby Shower</div>
+        <div class="portfolio-name"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section id="about">
+  <div class="about-visual">
+    <div class="about-img-main"></div>
+    <div class="about-img-accent"></div>
+    <div class="about-badge">
+      <div class="about-badge-num">7+</div>
+      <div class="about-badge-text">Years of<br/>Experience</div>
+    </div>
+  </div>
+  <div class="about-content">
+    <span class="section-label">Our Story</span>
+    <h2 class="section-title">Passion Meets <em>Perfection</em></h2>
+    <p>Events by Nazare was born from a belief that every celebration deserves to feel extraordinary. Founded by <span class="ishita">Ishita Billa</span>, a visionary event designer with an eye for detail and a heart for people, we bring artistry and warmth to every event we touch.</p>
+    <p>From grand corporate conferences to the most intimate bridal showers, our team approaches each event as a one-of-a-kind canvas — blending your vision with our expertise to create something truly unforgettable.</p>
+    <div class="about-stats">
+      <div><div class="stat-num">50+</div><div class="stat-label">Events Delivered</div></div>
+      <div><div class="stat-num">98%</div><div class="stat-label">Client Satisfaction</div></div>
+      <div><div class="stat-num">12</div><div class="stat-label">Cities Served</div></div>
+      <div><div class="stat-num">2+</div><div class="stat-label">Years of Excellence</div></div>
+    </div>
+    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Work With Us</button>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════ -->
+<section id="testimonials">
+  <span class="section-label">Kind Words</span>
+  <h2 class="section-title">What Our <em>Clients</em> Say</h2>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-quote">"Nazare and her team turned our wedding vision into something even more beautiful than we imagined. Every detail was flawless."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">S</div>
+        <div>
+          <div class="testi-name">Sofia &amp; Marcus R.</div>
+          <div class="testi-event">Garden Wedding · 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-quote">"Our annual conference has never looked or felt this premium. The level of professionalism was truly next level."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">J</div>
+        <div>
+          <div class="testi-name">James Thornton</div>
+          <div class="testi-event">Corporate Gala · 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-quote">"My 50th birthday was a dream. From the florals to the entertainment — every moment felt curated just for me."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">L</div>
+        <div>
+          <div class="testi-name">Linda Beaumont</div>
+          <div class="testi-event">Birthday Celebration · 2023</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section id="contact">
+  <div class="contact-info">
+    <span class="section-label">Get In Touch</span>
+    <h2 class="section-title">Let's Plan Something <em>Beautiful</em></h2>
+    <p>Ready to bring your event to life? Tell us about your vision and we'll craft a bespoke proposal just for you. We'd love to hear from you.</p>
+    <div class="contact-detail">
+      <div class="contact-item">
+        <span class="contact-icon">📸</span>
+        <div>
+          <div class="contact-item-label">Instagram</div>
+          <div class="contact-item-val"><a href="https://www.instagram.com/eventsby_nazare?igsh=MXFlZXpjMXlodWN2dA==" class="__cf_email__" data-cfemail="c0a8a5acacaf80a5b6a5aeb4b3a2b9aea1baa1b2a5eea3afad">Events by Nazare</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <div>
+          <div class="contact-item-label">Phone</div>
+          <div class="contact-item-val">+91 8826212400</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div>
+          <div class="contact-item-label">Location</div>
+          <div class="contact-item-val">Available Nationwide</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="firstname">First Name</label>
+          <input id="firstname" name="First Name" data-field="firstname" class="form-input" type="text" placeholder="Your first name" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="lastname">Last Name</label>
+          <input id="lastname" name="Last Name" class="form-input" type="text" placeholder="Your last name"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Contact Number</label>
+        <input id="email" name="email" class="form-input" type="email" placeholder="Your Number" required/>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="event-type">Event Type</label>
+          <select id="event-type" name="Event Type" class="form-select">
+            <option value="">Select type...</option>
+            <option>Corporate / Conference</option>
+            <option>Wedding</option>
+            <option>Birthday Party</option>
+            <option>Baby Shower</option>
+            <option>Bridal Shower</option>
+            <option>Sports Activation</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="event-date">Event Date</label>
+          <input id="event-date" name="Event Date" class="form-input" type="date"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">Tell Us About Your Vision</label>
+        <textarea id="message" name="Message" class="form-textarea" placeholder="Share your dream event details, guest count, venue ideas..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send Inquiry →</button>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">Events <span>by Nazare</span></div>
+  <div class="footer-copy">© 2025 Events by Nazare. All rights reserved.</div>
+  <div class="footer-social">
+   
