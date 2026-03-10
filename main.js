@@ -80,7 +80,7 @@ document.querySelectorAll(
 });
 
 /* ── 5. CONTACT FORM VALIDATION & SUBMISSION via Formspree ── */
-const FORMSPREE_URL = 'https://formspree.io/f/mwvrlvzk';
+const FORMSPREE_URL = 'https://formspree.io/f/mnjgpjkp';
 
 const form      = document.querySelector('.contact-form');
 const submitBtn = form.querySelector('.btn-submit');
@@ -98,7 +98,7 @@ form.addEventListener('submit', async e => {
   // Validation rules
   const rules = [
     { selector: 'input[data-field="firstname"]', msg: 'First name is required.' },
-    { selector: 'input[type="email"]',           msg: 'A valid email is required.' },
+    { selector: 'input[type="number"]',           msg: 'A valid number is required.' },
     { selector: 'select',                        msg: 'Please select an event type.' },
   ];
 
