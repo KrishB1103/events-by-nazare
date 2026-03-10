@@ -98,7 +98,7 @@ form.addEventListener('submit', async e => {
   // Validation rules
   const rules = [
     { selector: 'input[data-field="firstname"]', msg: 'First name is required.' },
-    { selector: 'input[type="number"]',           msg: 'A valid number is required.' },
+    { selector: 'input[type="tel"]',           msg: 'A valid number is required.' },
     { selector: 'select',                        msg: 'Please select an event type.' },
   ];
 
