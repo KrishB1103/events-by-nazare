@@ -106,7 +106,7 @@ form.addEventListener('submit', async e => {
     const field = form.querySelector(selector);
     if (!field) return;
     const isEmpty    = !field.value.trim();
-    const isEmailBad = field.type === 'email' && field.value &&
+    const isEmailBad = field.type === 'tel' && field.value &&
                        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value);
 
     if (isEmpty || isEmailBad) {
