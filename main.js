@@ -106,10 +106,10 @@ form.addEventListener('submit', async e => {
     const field = form.querySelector(selector);
     if (!field) return;
     const isEmpty = !field.value.trim();
-    const isEmailBad = field.type === 'tel' && field.value &&
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value);
+    const isPhoneBad = field.type === 'tel' && field.value &&
+      !/^\+?[\d\s\-()]{7,15}$/.test(field.value.trim());
 
-    if (isEmpty || isEmailBad) {
+    if (isEmpty || isPhoneBad) {
       valid = false;
       field.style.borderColor = '#e07070';
       const err = document.createElement('span');
