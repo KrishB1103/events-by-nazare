@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms & Conditions — Events by Nazare</title>
+  <meta name="description" content="Terms and Conditions for Events by Nazare — luxury event planning services."/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* ── Terms page specific styles ── */
+    .terms-hero {
+      min-height: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 120px;
+      padding-bottom: 4rem;
+      background: var(--charcoal);
+      position: relative;
+      overflow: hidden;
+    }
+    .terms-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -20%;
+      width: 140%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(155,133,204,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .terms-hero .section-label { color: var(--lavender); }
+    .terms-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 4vw, 4rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.15;
+    }
+    .terms-hero h1 em { color: var(--lavender); font-style: italic; }
+    .terms-hero .terms-updated {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 1.2rem;
+    }
+
+    .terms-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 5rem 2rem 6rem;
+    }
+    .terms-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--lavender-light);
+    }
+    .terms-content h2:first-of-type { margin-top: 0; }
+    .terms-content h2 span {
+      color: var(--lavender-deep);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      display: block;
+      font-family: 'Jost', sans-serif;
+      margin-bottom: 0.3rem;
+    }
+    .terms-content p,
+    .terms-content li {
+      font-size: 0.88rem;
+      line-height: 1.9;
+      color: var(--text-muted);
+      font-weight: 300;
+    }
+    .terms-content p { margin-bottom: 1rem; }
+    .terms-content ul,
+    .terms-content ol {
+      margin: 0.8rem 0 1.5rem 1.5rem;
+    }
+    .terms-content li { margin-bottom: 0.5rem; }
+    .terms-content strong { color: var(--charcoal); font-weight: 500; }
+
+    .terms-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--lavender-deep);
+      text-decoration: none;
+      margin-bottom: 3rem;
+      transition: color 0.3s;
+    }
+    .terms-back:hover { color: var(--charcoal); }
+    .terms-back::before { content: '←'; }
+
+    @media (max-width: 768px) {
+      .terms-content { padding: 3rem 1.5rem 4rem; }
+      .terms-hero { padding-top: 100px; min-height: 30vh; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAV
+══════════════════════════════════════ -->
+<nav>
+  <a class="nav-logo" href="index.html"><span>Nazare</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="window.location.href='index.html#contact'">Book Now</button>
+  <button id="burger-btn" aria-label="Toggle menu">&#9776;</button>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="terms-hero">
+  <span class="section-label">Legal</span>
+  <h1>Terms & <em>Conditions</em></h1>
+  <div class="terms-updated">Last Updated — March 2025</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CONTENT
+══════════════════════════════════════ -->
+<div class="terms-content">
+  <a href="index.html" class="terms-back">Back to Home</a>
+
+  <h2><span>01</span>Introduction</h2>
+  <p>Welcome to Events by Nazare. These Terms and Conditions govern your use of our website and the event planning services we provide. By accessing our website or engaging our services, you agree to be bound by these terms.</p>
+  <p>Events by Nazare is operated by Ishita Billa. Throughout these terms, "we," "us," and "our" refer to Events by Nazare, and "you" and "your" refer to the client or website visitor.</p>
+
+  <h2><span>02</span>Services</h2>
+  <p>Events by Nazare provides luxury event planning and management services, including but not limited to:</p>
+  <ul>
+    <li>Corporate events and conferences</li>
+    <li>Weddings and functions</li>
+    <li>Birthday celebrations</li>
+    <li>Baby showers and bridal showers</li>
+    <li>Parties and social gatherings</li>
+  </ul>
+  <p>The specific scope, deliverables, and pricing of services will be outlined in a separate proposal or agreement provided to each client on a case-by-case basis.</p>
+
+  <h2><span>03</span>Bookings & Payments</h2>
+  <p>All bookings are confirmed only upon receipt of a signed agreement and the required advance payment as specified in the proposal. Payment terms, including deposit amounts, milestone payments, and final settlement, will be detailed in your individual service agreement.</p>
+  <ul>
+    <li><strong>Advance Payment:</strong> A non-refundable booking deposit is required to secure your event date.</li>
+    <li><strong>Balance Payment:</strong> The remaining balance must be settled as per the timeline outlined in your agreement, typically no later than 7 days prior to the event.</li>
+    <li><strong>Additional Costs:</strong> Any additional services or changes requested after the agreement is signed may incur extra charges, which will be communicated and agreed upon in advance.</li>
+  </ul>
+
+  <h2><span>04</span>Cancellation & Refund Policy</h2>
+  <p>We understand that circumstances may change. Our cancellation policy is as follows:</p>
+  <ul>
+    <li><strong>30+ days before the event:</strong> You may cancel with a forfeiture of the booking deposit. Any additional payments made will be refunded.</li>
+    <li><strong>15–30 days before the event:</strong> 50% of the total fee is payable, with the remainder refunded.</li>
+    <li><strong>Less than 15 days before the event:</strong> The full event fee is non-refundable, as resources and vendors will have been committed.</li>
+  </ul>
+  <p>Postponements are subject to date availability and may incur rescheduling fees. We will work with you to find the best possible solution.</p>
+
+  <h2><span>05</span>Client Responsibilities</h2>
+  <p>To ensure the success of your event, we ask that you:</p>
+  <ul>
+    <li>Provide accurate and timely information regarding your event requirements, guest count, and preferences.</li>
+    <li>Respond to communications and approve proposals within the agreed timelines.</li>
+    <li>Ensure that the venue and any client-provided vendors comply with all applicable laws and safety regulations.</li>
+    <li>Inform us of any dietary restrictions, accessibility requirements, or special considerations for your guests.</li>
+  </ul>
+
+  <h2><span>06</span>Liability</h2>
+  <p>Events by Nazare takes the utmost care in planning and executing your event. However, we shall not be held liable for:</p>
+  <ul>
+    <li>Acts of God, natural disasters, pandemics, or other force majeure events beyond our reasonable control.</li>
+    <li>Actions, negligence, or failures of third-party vendors, venues, or service providers.</li>
+    <li>Personal injury or property damage occurring at the event venue unless directly caused by our proven negligence.</li>
+    <li>Delays or issues arising from incomplete or inaccurate information provided by the client.</li>
+  </ul>
+  <p>Our total liability shall not exceed the total fees paid by the client for the specific event in question.</p>
+
+  <h2><span>07</span>Intellectual Property</h2>
+  <p>All creative concepts, designs, mood boards, layouts, and materials produced by Events by Nazare remain our intellectual property unless otherwise agreed in writing. We reserve the right to photograph and document events for our portfolio and marketing purposes, unless you opt out in writing prior to the event.</p>
+
+  <h2><span>08</span>Privacy & Data</h2>
+  <p>We respect your privacy and handle all personal information in accordance with applicable data protection laws. Information collected through our website or during the course of our services will be used solely for the purpose of providing our services and communicating with you. We will never sell or share your personal data with third parties for marketing purposes.</p>
+
+  <h2><span>09</span>Changes to Terms</h2>
+  <p>Events by Nazare reserves the right to update or modify these Terms and Conditions at any time. Changes will be posted on this page with an updated revision date. Your continued use of our services after any modifications constitutes your acceptance of the revised terms.</p>
+
+  <h2><span>10</span>Contact</h2>
+  <p>If you have any questions about these Terms and Conditions, please reach out to us:</p>
+  <ul>
+    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/eventsby_nazare" style="color:var(--lavender-deep);text-decoration:none;">@eventsby_nazare</a></li>
+    <li><strong>Phone / WhatsApp:</strong> +91 8826212400</li>
+    <li><strong>Location:</strong> Available Nationwide</li>
+  </ul>
+</div>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">Events <span>by Nazare</span></div>
+  <div class="footer-copy">© 2025 Events by Nazare. All rights reserved.</div>
+  <div class="footer-social">
+    <a href="index.html">Home</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+  /* ── Sticky nav shadow ── */
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.boxShadow = window.scrollY > 30
+      ? '0 4px 30px rgba(42,36,48,0.10)'
+      : 'none';
+  });
+
+  /* ── Mobile hamburger ── */
+  const navLinks = document.querySelector('.nav-links');
+  const burger = document.getElementById('burger-btn');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    burger.innerHTML = navLinks.classList.contains('open') ? '&#10005;' : '&#9776;';
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      burger.innerHTML = '&#9776;';
+    });
+  });
+</script>
+</body>
+</html>
