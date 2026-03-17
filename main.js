@@ -36,11 +36,11 @@ document.querySelectorAll('.filter-tab').forEach(tab => {
       const cat = item.dataset.category;
       const show =
         selected === 'all' ||
-        (selected === 'weddings'  && cat === 'wedding')   ||
+        (selected === 'weddings' && cat === 'wedding') ||
         (selected === 'corporate' && cat === 'corporate') ||
-        (selected === 'birthdays' && cat === 'birthday')  ||
-        (selected === 'showers'   && cat === 'shower')    ||
-        (selected === 'sports'    && cat === 'sports');
+        (selected === 'birthdays' && cat === 'birthday') ||
+        (selected === 'showers' && cat === 'shower') ||
+        (selected === 'sports' && cat === 'sports');
 
       if (show) {
         item.style.display = '';
@@ -82,7 +82,7 @@ document.querySelectorAll(
 /* ── 5. CONTACT FORM VALIDATION & SUBMISSION via Formspree ── */
 const FORMSPREE_URL = 'https://formspree.io/f/mnjgpjkp';
 
-const form      = document.querySelector('.contact-form');
+const form = document.querySelector('.contact-form');
 const submitBtn = form.querySelector('.btn-submit');
 
 form.addEventListener('submit', async e => {
@@ -98,16 +98,16 @@ form.addEventListener('submit', async e => {
   // Validation rules
   const rules = [
     { selector: 'input[data-field="firstname"]', msg: 'First name is required.' },
-    { selector: 'input[type="tel"]',           msg: 'A valid number is required.' },
-    { selector: 'select',                        msg: 'Please select an event type.' },
+    { selector: 'input[type="tel"]', msg: 'A valid number is required.' },
+    { selector: 'select', msg: 'Please select an event type.' },
   ];
 
   rules.forEach(({ selector, msg }) => {
     const field = form.querySelector(selector);
     if (!field) return;
-    const isEmpty    = !field.value.trim();
+    const isEmpty = !field.value.trim();
     const isEmailBad = field.type === 'tel' && field.value &&
-                       !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value);
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value);
 
     if (isEmpty || isEmailBad) {
       valid = false;
@@ -170,7 +170,7 @@ form.addEventListener('submit', async e => {
 
 /* ── 6. MOBILE HAMBURGER MENU ── */
 const navLinks = document.querySelector('.nav-links');
-const burger   = document.getElementById('burger-btn');
+const burger = document.getElementById('burger-btn');
 
 burger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
