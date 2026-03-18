@@ -236,12 +236,12 @@ section { padding: 7rem 4rem; }
 }
 
 /* Portfolio card images */
-.p1 { background: url('resources/IMG_9028_Original.JPG') no-repeat center/cover; }
-.p2 { background: url('resources/IMG_8596_Original.JPG') no-repeat center/cover; }
-.p3 { background: url('resources/IMG_8053_Original.JPG') no-repeat center/cover; }
-.p4 { background: url('resources/IMG_4693.jpg') no-repeat center/cover; }
-.p5 { background: url('resources/IMG_7968_Original.JPG') no-repeat center/cover; }
-.p6 { background: url('resources/IMG_4707.jpg') no-repeat center/cover; }
+.p1 { background: url('resources/IMG_9028_Original_min.jpg') no-repeat center/cover; }
+.p2 { background: url('resources/IMG_8596_Original_min.jpg') no-repeat center/cover; }
+.p3 { background: url('resources/IMG_8053_Original_min.jpg') no-repeat center/cover; }
+.p4 { background: url('resources/IMG_4693_min.jpg') no-repeat center/cover; }
+.p5 { background: url('resources/IMG_7968_Original_min.jpg') no-repeat center/cover; }
+.p6 { background: url('resources/IMG_4707_min.jpg') no-repeat center/cover; }
 
 /* ── ABOUT ── */
 #about {
