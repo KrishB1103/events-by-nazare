@@ -80,7 +80,7 @@ document.querySelectorAll(
 });
 
 /* ── 5. CONTACT FORM VALIDATION & SUBMISSION via Formspree ── */
-const FORMSPREE_URL = 'https://formspree.io/f/mnjgpjkp';
+const FORMSPREE_URL = 'https://formspree.io/f/meervoaw';
 
 const form = document.querySelector('.contact-form');
 const submitBtn = form.querySelector('.btn-submit');
