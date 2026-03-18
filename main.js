@@ -71,7 +71,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll(
-  '.service-card, .testi-card, .portfolio-item, .about-visual, .about-content, .contact-info, .contact-form'
+  '.service-card, .active-scroll, .about-visual, .about-content, .contact-info, .contact-form'
 ).forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(24px)';
@@ -184,3 +184,4 @@ navLinks.querySelectorAll('a').forEach(a => {
     burger.innerHTML = '&#9776;';
   });
 });
+
